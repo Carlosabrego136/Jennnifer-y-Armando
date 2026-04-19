@@ -68,7 +68,8 @@
          SECCIÓN 1 — HERO / PORTADA
          Imagen de fondo: /img/5.jpg
          ============================================================ -->
-    <section class="w-screen h-screen bg-[url(./img/5.jpg)] bg-fixed bg-cover bg-no-repeat bg-center p-20 max-lg:pt-20">
+    <section class="w-screen h-screen bg-[url(./img/5.jpg)] bg-cover bg-no-repeat bg-center p-20 max-lg:pt-20"
+      style="background-attachment: scroll;">
       <h1 class="font-[extraCursive] text-9xl text-white text-center max-lg:text-5xl">
         Jennifer &amp; Armando
       </h1>
@@ -632,12 +633,12 @@
            /img/7.jpg           → Foto 7 (reutilizada)
            /img/8.jpg           → Foto 8 (reutilizada)
          ============================================================ -->
-    <section class="relative w-screen min-h-screen bg-[#b19671] text-white flex flex-col items-center p-10 max-lg:px-6">
+    <section class="relative w-screen min-h-screen bg-[#b19671] text-white flex flex-col items-center p-10 max-lg:px-4">
       <h2 class="font-[extraCursive] text-9xl max-lg:text-6xl">Galeria</h2>
       <h3 class="text-5xl uppercase max-lg:text-3xl">de fotos</h3>
 
       <!-- Grid de fotos -->
-      <div class="w-4/10 h-[500px] grid grid-cols-3 grid-rows-3 gap-2 mt-10 max-lg:w-full animation-scroll">
+      <div class="w-full max-w-2xl grid grid-cols-3 gap-2 mt-10 animation-scroll" style="grid-auto-rows: 180px;">
         <button class="w-full h-full relative overflow-hidden animate-on-scroll">
           <img alt="Foto 1" loading="lazy" width="1000" height="1000" class="w-full h-full object-cover object-center hover:scale-110 transition duration-300" src="./img/IMG_4319.jpg" />
         </button>
@@ -653,19 +654,19 @@
         <button class="w-full h-full relative overflow-hidden animate-on-scroll">
           <img alt="Foto 5" loading="lazy" width="1000" height="1000" class="w-full h-full object-cover object-center hover:scale-110 transition duration-300" src="./img/5.jpg" />
         </button>
-        <button class="w-full h-full relative overflow-hidden animate-on-scroll">
+        <button class="w-full h-full relative overflow-hidden animate-on-scroll col-span-2">
           <img alt="Foto 6" loading="lazy" width="1000" height="1000" class="w-full h-full object-cover object-center hover:scale-110 transition duration-300" src="./img/IMG_4261-Edit.jpg" />
         </button>
         <button class="w-full h-full relative overflow-hidden animate-on-scroll">
           <img alt="Foto 7" loading="lazy" width="1000" height="1000" class="w-full h-full object-cover object-center hover:scale-110 transition duration-300" src="./img/7.jpg" />
         </button>
-        <button class="w-full h-full relative overflow-hidden animate-on-scroll">
+        <button class="w-full h-full relative overflow-hidden animate-on-scroll col-span-2">
           <img alt="Foto 8" loading="lazy" width="1000" height="1000" class="w-full h-full object-cover object-center hover:scale-110 transition duration-300" src="./img/8.jpg" />
         </button>
       </div>
 
       <!-- Logo -->
-      <img alt="logo" loading="lazy" width="120" height="120" class="m-auto mt-4 max-lg:w-[70px] max-lg:h-[70px]" src="./img/logo.png" />
+      <img alt="logo" loading="lazy" width="120" height="120" class="m-auto mt-6 max-lg:w-[70px] max-lg:h-[70px]" src="./img/logo.png" style="mix-blend-mode:multiply;" />
     </section>
 
 
